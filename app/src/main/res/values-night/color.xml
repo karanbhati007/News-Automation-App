@@ -8,6 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="colorAccent">#673AB7</color>
-    <color name="title">@android:color/black</color>
-    <color name="descp">#808080</color>
+    <color name="title">@android:color/white</color>
+    <color name="descp">#C8C3C3</color>
+
 </resources>

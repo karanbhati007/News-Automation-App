@@ -10,4 +10,6 @@ data class News(
     val images: List<String>,
     @SerializedName("title")
     val title: List<String>,
+    @SerializedName("newsUrl")
+    val newsUrl: List<String>
 )

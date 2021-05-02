@@ -47,7 +47,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="8dp"
                     android:text="@{news.title[position]}"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/title"
                     android:textSize="22sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -65,47 +65,57 @@
                     android:layout_marginEnd="8dp"
                     android:text="@{news.descp[position]}"
                     android:textSize="18sp"
+                    android:textColor="@color/descp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/title_news"
                     tools:text="Description" />
 
-                <ImageView
-                    android:id="@+id/imageView3"
-                    loadBlurNewsImageFromURL="@{news.images[position]}"
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    onClickWebOpen="@{news.newsUrl[position]}"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
-                    android:scaleType="centerCrop"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:srcCompat="@drawable/ic_launcher_background" />
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        loadBlurNewsImageFromURL="@{news.images[position]}"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/ic_launcher_background" />
 
 
-                <ImageView
-                    android:id="@+id/black_layer"
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:alpha="0.5"
-                    android:background="@color/black"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="@+id/imageView3"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/imageView3" />
+                    <ImageView
+                        android:id="@+id/black_layer"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:alpha="0.5"
+                        android:background="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/imageView3" />
 
-                <TextView
-                    android:id="@+id/tap_here"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:text="Tap here to read more ..."
-                    android:textColor="@color/white"
-                    android:textSize="16sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/imageView3" />
+                    <TextView
+                        android:id="@+id/tap_here"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="Tap here to read more ..."
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </com.google.android.material.card.MaterialCardView>
