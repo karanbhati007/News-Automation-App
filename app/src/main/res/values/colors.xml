@@ -10,4 +10,5 @@
     <color name="colorAccent">#673AB7</color>
     <color name="title">@android:color/black</color>
     <color name="descp">#808080</color>
+    <color name="watch_on_youtube">#E6716E6E</color>
 </resources>
