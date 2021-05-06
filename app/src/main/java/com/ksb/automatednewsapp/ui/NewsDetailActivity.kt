@@ -1,14 +1,12 @@
-package com.ksb.automatednewsapp
+package com.ksb.automatednewsapp.ui
 
 import android.annotation.SuppressLint
-import android.graphics.Bitmap
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.webkit.WebResourceRequest
 import android.webkit.WebView
 import android.webkit.WebViewClient
-import androidx.transition.Visibility
+import com.ksb.automatednewsapp.R
 import kotlinx.android.synthetic.main.activity_news_detail.*
 
 class NewsDetailActivity : AppCompatActivity() {

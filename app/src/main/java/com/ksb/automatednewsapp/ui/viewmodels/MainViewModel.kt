@@ -1,22 +1,17 @@
-package com.ksb.automatednewsapp.viewmodels
+package com.ksb.automatednewsapp.ui.viewmodels
 
 import android.app.Application
 import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
-import android.net.NetworkRequest
 import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.ksb.automatednewsapp.data.Repository
-import com.ksb.automatednewsapp.data.remote.NewsApi
 import com.ksb.automatednewsapp.model.News
-import com.ksb.automatednewsapp.util.NetworkResult
+import com.ksb.automatednewsapp.utils.NetworkResult
 import kotlinx.coroutines.launch
-import java.lang.Error
-import javax.inject.Inject
 
 
 class MainViewModel @ViewModelInject constructor(

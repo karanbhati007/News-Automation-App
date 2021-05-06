@@ -59,14 +59,14 @@
                 <TextView
                     android:id="@+id/desc_news"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="0dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="16dp"
                     android:ellipsize="end"
+                    android:maxLines="15"
                     android:text="@{news.descp[position]}"
-                    android:maxHeight="240dp"
                     android:textColor="@color/descp"
                     android:textSize="16sp"
                     app:layout_constraintBottom_toTopOf="@+id/watch_on_youtube"
@@ -75,7 +75,8 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/title_news"
                     app:layout_constraintVertical_bias="0.0"
-                    tools:text="Description" />
+                    tools:text="Lorem Ipsum is unadulterated drivel. It means nothing whatsoever, but it's surprisingly useful. The main idea behind lorem ipsum is to have 'convincing' text, separated into words, paragraphs and with punctuation etc. This 'text' is then used by DTP bureaux and web designers for roughing out document designs, illustrating text flow and run arounds before the final text arrives. It allows designers to show their proposals without having clients distracted by meaningful text. It also avoids fine publications like N.T.K. detecting irony which may become apparent in old web page drafts loitering around dusty servers which had English-language garbage text used as filler. A FOLDOC definition of lorem ipsum is here.
+This page will generate random lorem ipsum with convincing sentence and paragraphing constructs. Just fill in the fields below to suit your needs and a customised random load of pseudo-latin guff will be sent back to you. There is an 100K limit, to stunt the ambitions of l33t haX0rz with novelty DOS attack plans." />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/watch_on_youtube"

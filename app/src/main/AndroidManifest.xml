@@ -14,8 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AutomatedNewsApp"
         android:usesCleartextTraffic="true">
-        <activity android:name=".NewsDetailActivity"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.NewsDetailActivity"></activity>
+        <activity android:name=".ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

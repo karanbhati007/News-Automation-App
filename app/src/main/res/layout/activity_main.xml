@@ -10,9 +10,9 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".ui.MainActivity">
 
-        <com.ksb.automatednewsapp.viewpager.VerticalViewPager
+        <com.ksb.automatednewsapp.ui.viewpager.VerticalViewPager
             android:id="@+id/vertical_viewpager"
             android:layout_width="match_parent"
             android:visibility="gone"

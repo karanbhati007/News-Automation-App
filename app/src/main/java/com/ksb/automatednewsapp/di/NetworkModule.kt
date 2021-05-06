@@ -1,7 +1,7 @@
 package com.ksb.automatednewsapp.di
 
 import com.ksb.automatednewsapp.data.remote.NewsApi
-import com.ksb.automatednewsapp.util.Constants
+import com.ksb.automatednewsapp.utils.Constants
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

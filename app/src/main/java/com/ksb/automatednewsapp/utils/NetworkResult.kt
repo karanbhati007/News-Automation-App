@@ -1,4 +1,4 @@
-package com.ksb.automatednewsapp.util
+package com.ksb.automatednewsapp.utils
 
 sealed class NetworkResult<T>(
     val data: T? = null,

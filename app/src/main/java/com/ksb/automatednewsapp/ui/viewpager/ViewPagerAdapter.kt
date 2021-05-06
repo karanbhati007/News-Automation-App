@@ -1,4 +1,4 @@
-package com.ksb.automatednewsapp.viewpager
+package com.ksb.automatednewsapp.ui.viewpager
 
 import android.content.Context
 import android.view.LayoutInflater

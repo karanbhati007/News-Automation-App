@@ -1,18 +1,18 @@
-package com.ksb.automatednewsapp
+package com.ksb.automatednewsapp.ui
 
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import androidx.annotation.ContentView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.snackbar.Snackbar
+import com.ksb.automatednewsapp.R
 import com.ksb.automatednewsapp.databinding.ActivityMainBinding
 import com.ksb.automatednewsapp.model.News
-import com.ksb.automatednewsapp.util.NetworkResult
-import com.ksb.automatednewsapp.viewmodels.MainViewModel
-import com.ksb.automatednewsapp.viewpager.ViewPagerAdapter
+import com.ksb.automatednewsapp.utils.NetworkResult
+import com.ksb.automatednewsapp.ui.viewmodels.MainViewModel
+import com.ksb.automatednewsapp.ui.viewpager.ViewPagerAdapter
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.activity_main.*
 

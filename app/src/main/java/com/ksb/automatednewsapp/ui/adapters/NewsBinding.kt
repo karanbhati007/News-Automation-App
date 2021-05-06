@@ -1,4 +1,4 @@
-package com.ksb.automatednewsapp.adapters
+package com.ksb.automatednewsapp.ui.adapters
 
 
 import android.content.ActivityNotFoundException
@@ -6,11 +6,10 @@ import android.content.Intent
 import android.net.Uri
 import android.widget.ImageView
 import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.core.content.ContextCompat.startActivity
 import androidx.databinding.BindingAdapter
 import coil.load
 import coil.transform.BlurTransformation
-import com.ksb.automatednewsapp.NewsDetailActivity
+import com.ksb.automatednewsapp.ui.NewsDetailActivity
 import com.ksb.automatednewsapp.R
 
 
